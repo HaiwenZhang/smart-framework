@@ -40,4 +40,8 @@ public final class ConfigHelper {
             ConfigConstant.APP_ASSET_PATH,
             "/asset/");
     }
+
+    public static int getAppUploadLimit() {
+        return PropsUtil.getInt(CONFIG_PROPS, ConfigConstant.APP_UPLOAD_LIMIT, 10);
+    }
 }
